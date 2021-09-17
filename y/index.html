@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tea and Coffe | Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<section>
+
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<header>
+			<a href="#"> <img src="img/logo.png" class="logo"></a>
+			<ul>
+				<li> <a href="index.html" target="_blank"> Home </a></li>
+				<li class="cart"> <a href="cart.html" target="_blank"> Cart <span>0</span> </a></li>
+			</ul>
+		</header>
+
+		<div class="content slideshow-container">
+			<div class="textBox">
+				<h2>More than 1,000 varieties of Tea and Coffee from around the World</h2>
+				<p>The Tea and Coffee Company is an independent family business run for more than three generations. We import, pack, wholesale, and retail more than 1000 types of loose leaf tea, and over 70 types of fresh-roasted, whole-bean, and ground coffee for private and commercial customers all over the world. Our factory is located at Pivington Mill near the small British village of Pluckley that is situated right in the heart of Kent.</p>
+			</div>
+			<div class="mySlides fade imgContainer">
+			  <img src="img/tea-bag.png">
+			</div>
+
+			<div class="mySlides fade imgContainer">
+
+			  <img src="img/coffee-bag.png">
+
+			</div>
+		</div>
+
+		<ul class="thumb">
+			<li> <a href="tea.html" target="_blank"> <img src="img/tea-thumb.png"> </a> <p> Tea </p>  </li>
+			<li> <a href="coffee.html" target="_blank"> <img src="img/coffee-thumb.png"> </a> <p> Coffee </p> </li>
+		</ul>
+
+		<ul class="sm">
+			<li> <a href="#"> <img src="img/instagram.png"> </a> </li>
+			<li> <a href="#"> <img src="img/facebook.png"> </a> </li>
+			<li> <a href="#"> <img src="img/twitter.png"> </a> </li>
+		</ul>
+
+	</section>
+
+
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  slides[slideIndex-1].style.display = "block";  
+		 
+		  setTimeout(showSlides, 4000); 
+		}
+		</script>
+
+		<script src="cart.js"></script>
+</body>
+</html>

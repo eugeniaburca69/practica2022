@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+/*------Animatia din dreapta-----*/
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #f6f8cf;
+}
+
+/*-----pagina principala-----*/
+
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  position: relative;
+  max-width: 70px;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul li a{
+  display: inline-block;
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.circle1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #367033;
+  clip-path: circle(600px at right 800px);
+}
+
+.circle2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c5f456;
+  clip-path: circle(200px at left 300px);
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox{
+  position: relative;
+  bottom: 40px;
+  max-width: 600px;
+}
+
+.content .textBox h2{
+  color: #333;
+  font-size: 2.5em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textBox p{
+  color: #333;
+}
+
+.content .imgContainer{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  margin-top: 50px;
+}
+
+.content .imgContainer img{
+  position: relative;
+  left: 80px;
+  max-width: 500px;
+}
+
+.thumb{
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li:hover{
+  transform: translateY(-15px);
+}
+
+.thumb li img{
+  max-width: 80px;
+}
+
+.thumb p{
+  font-weight: 500;
+  position: relative;
+  left: 25px;
+  color: #333;
+}
+
+.sm{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sm li{
+  list-style: none;
+}
+
+.sm li a{
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
+  filter: invert(1);
+}
+
+.circle1-tea{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #c5f456;
+  clip-path: circle(300px at right 100px);
+}
+
+.circle2-tea{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #367033;
+  clip-path: circle(200px at left 400px);
+}
+
+.container-tea{
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.container-tea .thumb-tea{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.container-tea .thumb-tea li{
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  position: relative;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.container-tea .thumb-tea li img{
+  width: 80%;
+  transition: 0.5s;
+}
+
+.container-tea .thumb-tea li:hover img{
+  width: 100px;
+}
+
+.container-tea .imgBox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 60px 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-tea .imgBox img{
+  width: 70%;
+}
+
+.container-tea .imgBox h2{
+  color: #367033;
+  letter-spacing: 1;
+}
+
+.container-tea .imgBox .qtity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-tea .imgBox .qtity span{
+  color: #367033;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 5px;
+}
+
+.container-tea .imgBox .qtity input{
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  background-color: #f6f8cf;
+  color: #333;
+}
+
+.btn{
+  position: absolute;
+  bottom: -30px;
+  background: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #367033;
+}
+
+.btn:hover{
+  background-color: #367033;
+  color: white;
+}
+
+.container-tea .imgBox .btn-coffee:hover{
+  background-color: #7f694d;
+  color: white;
+}
+
+.tea2{
+  display: flex;
+}
+
+.circle1-coffee{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7f694d;
+  clip-path: circle(200px at left 200px);
+}
+
+.circle2-coffee{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d5b081;
+  clip-path: circle(300px at right 600px);
+}
+
+.cart-row {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+.cart-total{
+    margin-top: 70px;
+    margin-right: 25px; 
+    position: absolute;
+}
+
+.cart-total-title{
+  
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price{
+  font-size: 1.2em;
+
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.cart-item {
+    width: 35%;
+    font-size: 1.2em;
+}
+
+.cart-price {
+    width: 35%;
+    font-size: 1.2em;
+}
+
+.cart-quantity {
+    width: 30%;
+    font-size: 1.2em;
+}
+
+.item-title {
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image{
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+
+.cart-quantity-input{
+  height: 31px;
+  width: 60px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #fbfdd1;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.purchase{
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  left: 170px;
+}
+
+
+.products-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em 1.5em;
+  
+}
+
+.container-form {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+
+}
+
+.header {
+  background-color: #c5f456;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px; 
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form button {
+  background: #367033;
+  border: 2px solid #367033;
+  border-radius: 30px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+

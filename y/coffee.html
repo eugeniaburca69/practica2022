@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tea and Coffe | Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<section>
+
+		<div class="circle1-coffee"></div>
+		<div class="circle2-coffee"></div>
+
+		<header>
+			<a href="#"> <img src="img/logo.png" class="logo"></a>
+			<ul>
+				<li> <a href="index.html" target="_blank"> Home </a></li>
+				<li class="cart"> <a href="cart.html" target="_blank"> Cart <span>0</span> </a></li>
+				<li> <a href="tea.html" target="_blank"> Tea Shop </a> </li>
+			</ul>
+		</header>
+
+		<div class="container-tea">
+
+			
+
+			<ul class="thumb-tea">
+				<li onclick ="imgChange('coffee1.png')"> <img src="img/coffee1.png"> </li>
+				<li onclick ="imgChange('coffee-pack1.png')"> <img src="img/coffee-pack1.png"> </li>
+			</ul>
+
+			<div class="imgBox">
+				<h2>Arabica Roast Coffee</h2>
+				<img src="img/coffee1.png" class="Tea">
+					<div class="qtity">
+					<span>Price <span class="shop-price"> 7,00$ </span></span>
+				</div>
+				<a href="#" class="btn btn-coffee add-cart">Add to cart</a>
+			</div>
+
+		</div>
+
+		<div class="container-tea tea2">
+
+			<ul class="thumb-tea">
+				<li onclick ="imgChange2('coffee2.png')"> <img src="img/coffee2.png"> </li>
+				<li onclick ="imgChange2('coffee-pack.png')"> <img src="img/coffee-pack.png"> </li>
+			</ul>
+
+			<div class="imgBox">
+				<h2>Italian Roast Coffee</h2>
+				<img src="img/coffee2.png" class="Tea2">
+				<div class="qtity">
+					<span>Price <span class="shop-price"> 6,00$ </span></span>
+				</div>
+				<a href="#" class="btn btn-coffee add-cart">Add to cart</a>
+			</div>
+
+		</div>
+
+		<div class="container-tea">
+
+			<ul class="thumb-tea">
+				<li onclick ="imgChange3('coffee3.png')"> <img src="img/coffee3.png"> </li>
+				<li onclick ="imgChange3('coffee-pack3.png')"> <img src="img/coffee-pack3.png"> </li>
+			</ul>
+
+			<div class="imgBox">
+				<h2>Espresso Roast Coffee</h2>
+				<img src="img/coffee3.png" class="Tea3">
+				<div class="qtity">
+					<span>Price <span class="shop-price"> 8,00$ </span></span>
+				</div>
+				<a href="#" class="btn btn-coffee add-cart">Add to cart</a>
+			</div>
+
+		</div>
+
+		
+		
+
+	</section>
+
+	<script>
+		function imgChange(anything){
+			document.querySelector('.Tea').src = anything;
+		}
+
+		function imgChange2(anything){
+			document.querySelector('.Tea2').src = anything;
+		}
+
+		function imgChange3(anything){
+			document.querySelector('.Tea3').src = anything;
+		}
+
+	</script>
+
+	<script src="cart2.js"></script>
+
+</body>
+</html>
